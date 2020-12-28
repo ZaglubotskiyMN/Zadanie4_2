@@ -5,23 +5,21 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        toleft();
+    int [] a=new int[] {1,2,3,4};
+    for (int i=0;i<a.length;i++)
+        System.out.println(a[i]);
+    a[0]=4;
+    a[1]=3;
+    a[2]=2;
+    a[3]=1;
+        System.out.println(Arrays.toString(a));
+
+
     }
-
-
-        private static void toleft() {
-
-            int[][] a = {{1,2,3,4,5,6,7,8,9,10},{1,2,3,4,5,6,7,8,9,10}};
-            for(int i = a.length-1;i>=0;i--){
-                for (int j=a[i].length-1;j>=0;j--)
-                System.out.print(""+a[i][j] + "\t");
-                System.out.println();
+}
 
 
 
-            }
-        }
-    }
 
             /*for ( int i =0;i<a.length;i++){
                 for (int j=0;j<a[i].length;j++)
